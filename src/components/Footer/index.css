@@ -1,0 +1,13 @@
+footer {
+    & div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: var(--space);
+        margin-bottom: var(--space);
+    }
+
+    & p {
+        text-align: center;
+    }
+}

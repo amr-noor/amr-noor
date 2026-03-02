@@ -1,0 +1,29 @@
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space);
+
+    & img {
+        width: min(70vw, 300px);
+        border-radius: 50%;
+        border: 5px dashed var(--acc);
+    }
+
+    & .content {
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--space);
+
+        & h1 {
+            font-size: xxx-large;
+            letter-spacing: normal;
+        }
+    }
+
+    & ul li {
+        font-size: x-large;
+        text-align: center;
+    }
+}

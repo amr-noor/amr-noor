@@ -1,0 +1,40 @@
+.contact {
+    & ul {
+        display: flex;
+        justify-content: center;
+        gap: var(--space);
+        font-size: xx-large;
+    }
+
+    & form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space);
+        margin: var(--space) auto;
+
+        & * {
+            border: none;
+            outline: none;
+            padding: 10px;
+        }
+
+        & input[type=email],
+        & textarea {
+            background: #8080801a;
+            font-family: monospace;
+            border-bottom: 3px solid var(--acc);
+            width: 100%;
+        }
+
+        & textarea {
+            min-height: 100px;
+            max-height: 300px;
+            resize: vertical;
+        }
+
+        @media (width >=767px) {
+            width: 50%;
+        }
+    }
+}

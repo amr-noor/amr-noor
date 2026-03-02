@@ -1,0 +1,41 @@
+.skills .chart {
+    position: relative;
+    padding-block: 10px;
+    border-left: 5px solid #000;
+
+    & div {
+        --progress: attr(data-progress %);
+        --prog-txt: attr(data-progress);
+        position: relative;
+        width: var(--progress);
+        background: var(--prim);
+        padding: 10px;
+
+        &:not(:last-child) {
+            margin-bottom: var(--space);
+        }
+
+        &:before,
+        &:after {
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+        }
+
+        &:before {
+            content: "";
+            left: 100%;
+            border: 5px solid;
+            border-color: #0000 #fff #0000 #0000;
+        }
+
+        &:after {
+            content: var(--prog-txt) "%";
+            left: calc(100% + 10px);
+            background: #fff;
+            color: #000;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+}

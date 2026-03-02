@@ -1,0 +1,13 @@
+nav>ul {
+    display: flex;
+    gap: var(--space);
+
+    & a {
+        text-decoration: none;
+
+        &.active,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: min(300px, calc(100% - 40px));
+    background: #f00;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--time);
+    animation: alert 5s ease forwards;
+
+    &.success {
+        background: #080;
+    }
+
+    & p {
+        text-align: left;
+    }
+}
+
+@keyframes alert {
+    0% {
+        opacity: 0;
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

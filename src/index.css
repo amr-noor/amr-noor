@@ -1,0 +1,133 @@
+/* rules */
+:root {
+    --prim: #1e293b;
+    --acc: #60a5fa;
+    --txt: #e2e8f0;
+
+    --space: 20px;
+    --time: .3s;
+    --border: 2px solid var(--txt);
+    --radius: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--txt);
+}
+
+html {
+    scroll-behavior: smooth;
+    /* touch-action: manipulation; */
+}
+
+body {
+    background: var(--prim);
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    width: 50%;
+    border: 1px solid var(--txt);
+    margin: auto;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* components */
+section {
+    padding: 50px;
+
+    &:nth-child(2n) {
+        background: var(--acc);
+
+        & .btn {
+            background: var(--prim);
+        }
+    }
+
+    & .content {
+        margin-bottom: 50px;
+        text-align: center;
+
+        & h1 {
+            font-size: min(70px, 15vw);
+            font-weight: 900;
+            letter-spacing: -5px;
+            word-break: break-word;
+        }
+
+        & p {
+            text-align: center;
+            line-height: normal;
+            margin-top: -19px;
+            opacity: .5;
+        }
+    }
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    font-family: monospace;
+    cursor: pointer;
+    padding: 10px;
+    background: var(--acc);
+    color: #fff;
+}
+
+.container {
+    width: min(100%, 700px);
+    margin: auto;
+}
+
+.page {
+    animation: fade var(--time) ease forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* header, footer */
+header,
+footer {
+    padding: var(--space);
+}
+
+/* .projects, .certs */
+:is(.certs, .projects) .boxs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    &>div:has(> .btn) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: min(250px, 70vw);
+
+        & .btn {
+            padding: 15px;
+            font-size: larger;
+            font-weight: bold;
+        }
+    }
+}
