@@ -2,6 +2,19 @@ import { useState, useEffect } from "react";
 
 import "./index.css";
 
+const STATES = {
+    0: {
+        class: "",
+        icon: "fas fa-times-circle",
+        prefix: "Error: "
+    },
+    1: {
+        class: "success",
+        icon: "fas fa-check-circle",
+        prefix: "Success: "
+    }
+}
+
 const Alert = props => {
     const [alert, setAlert] = useState(null);
 
@@ -15,9 +28,9 @@ const Alert = props => {
         }
     }, [props.data]);
 
-    return alert && <div className={(alert.state ? "success" : "") + " alert"}>
-        <i className={alert.state ? "fas fa-check-circle" : "fas fa-times-circle"}></i>
-        <p>{(alert.state ? "Success: " : "Error: ") + alert.msg}</p>
+    return alert && <div className={STATES[alert.state].class + " alert"}>
+        <i className={STATES[alert.state].icon}></i>
+        <p>{STATES[alert.state].prefix + alert.msg}</p>
     </div>;
 }
 

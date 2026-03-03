@@ -20,7 +20,7 @@ const Error = () => <>
         </section>
     </main>
 
-    <Alert data={{ msg: "Page is not found!", state: false }} />
+    <Alert data={{ msg: "Page is not found!", state: 0 }} />
 </>;
 
 export default Error;

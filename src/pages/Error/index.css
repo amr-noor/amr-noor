@@ -1,6 +1,4 @@
 .error .btn {
     margin: auto;
-    padding: 15px;
-    font-size: larger;
-    font-weight: bold;
+    scale: 1.3;
 }

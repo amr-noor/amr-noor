@@ -22,12 +22,12 @@ const Contact = () => {
             form.current.reset();
             setAlert({
                 msg: "Your message has been sent successfully, We will send you an auto-reply Mail to your inputed email address.",
-                state: true
+                state: 1
             });
         } else {
             setAlert({
                 msg: "All fields are required, Please put a vaild email address!",
-                state: false
+                state: 0
             });
         }
     }
