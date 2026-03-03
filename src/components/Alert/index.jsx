@@ -15,12 +15,10 @@ const Alert = props => {
         }
     }, [props.data]);
 
-    return <>{
-        alert && <div className={(alert.state ? "success" : "") + " alert"}>
-            <i className={alert.state ? "fas fa-check-circle" : "fas fa-times-circle"}></i>
-            <p>{(alert.state ? "Success: " : "Error: ") + alert.msg}</p>
-        </div>
-    }</>;
+    return alert && <div className={(alert.state ? "success" : "") + " alert"}>
+        <i className={alert.state ? "fas fa-check-circle" : "fas fa-times-circle"}></i>
+        <p>{(alert.state ? "Success: " : "Error: ") + alert.msg}</p>
+    </div>;
 }
 
 export default Alert;

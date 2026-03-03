@@ -26,7 +26,7 @@ const Contact = () => {
             });
         } else {
             setAlert({
-                msg: "All fields are required, Please input a vaild email address!",
+                msg: "All fields are required, Please put a vaild email address!",
                 state: false
             });
         }
@@ -46,18 +46,18 @@ const Contact = () => {
                 </form>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/_amrnour/" target="_blank" rel="noopener">
+                        <a href="https://www.instagram.com/_amrnour/" target="_blank" rel="noopener" aria-label="instagram">
                             <i className="fa-brands fa-square-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/amr-noor/" target="_blank" rel="noopener">
+                        <a href="https://www.linkedin.com/in/amr-noor/" target="_blank" rel="noopener" aria-label="linkedin">
                             <i className="fa-brands fa-square-linkedin"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://github.com/amr-noor/" target="_blank" rel="noopener">
+                        <a href="https://github.com/amr-noor/" target="_blank" rel="noopener" aria-label="github">
                             <i className="fa-brands fa-square-github"></i>
                         </a>
                     </li>

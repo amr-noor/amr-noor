@@ -9,12 +9,12 @@ const Info = () => <section className="info">
         </div>
         <ul>
             <li>Web Developer</li>
-            <li>CyberSecurist</li>
+            <li>Cyber Securist</li>
         </ul>
     </div>
     <div className="container">
-        <p>I'm a Full "MERN" Stack Web Developer with more than 4 years of experience. I focus on clean code, high Performance, modern and responsive Designs and secured Front-End and Back-End.</p>
-        <p>I'm new in CyberSecurity field. I learned about Network Security, Ethical Hacking, Red Hat Linux Admin and more. I use tools like Nmap, Nessus, Metasploit and more.</p>
+        <p>I'm a Full "MERN" Stack Web Developer with more than 4 years of experience. I focus on clean code, high performance, modern, responsive and scalable designs and secured Front-End and Back-End.</p>
+        <p>I'm new in Cybersecurity field. I learned about Network Security, Ethical Hacking, Red Hat Linux Admin and more. I use tools like Nmap, Nessus, Metasploit and more.</p>
     </div>
 </section>;
 
