@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 const Home = props => <>
     <Helmet>
-        <title>Amr</title>
+        <title>Amr Mohamed Nour</title>
     </Helmet>
 
     <main className="page">
