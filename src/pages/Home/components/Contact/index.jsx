@@ -42,7 +42,7 @@ const Contact = () => {
                 <form ref={form} onSubmit={handler} action="#">
                     <input placeholder="Email" name="email" type="email" required autoComplete="email" />
                     <textarea placeholder="Message" name="message" rows="6" required></textarea>
-                    <input type="submit" className="btn" />
+                    <input type="submit" value="Submit" className="btn" />
                 </form>
                 <ul>
                     <li>

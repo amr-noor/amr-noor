@@ -27,4 +27,8 @@
         font-size: x-large;
         text-align: center;
     }
+
+    &>div:has(.container) {
+        width: 100%;
+    }
 }
